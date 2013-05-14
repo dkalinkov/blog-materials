@@ -1,0 +1,86 @@
+@font-face {
+    font-family: ExistenceLight;
+    src: url('../fonts/Existence-Light.otf');
+}
+
+.navigation {
+    font-family: ExistenceLight, Tahoma, sans-serif;
+    background: #333;
+    border-bottom: 5px solid #27d819;
+    font-size: 1.3em;
+}
+
+    .navigation ul, .navigation li {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navigation ul {
+        /* *display: inline-block; */
+        text-transform: uppercase;
+    }
+
+        .navigation:after, .navigation ul:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    .navigation .menu {
+        /*float: left;*/
+        display: inline-block;
+    }
+
+    .navigation ul li:hover {
+        position: relative;
+    }
+
+        .navigation ul li:hover > a {
+            background: #27d819;
+            color: #FFF;
+        }
+
+        .navigation ul li:hover > ul {
+            visibility: visible;
+        }
+
+    .navigation ul ul {
+        border-top: 5px solid #27d819;
+        min-width: 105%;
+        visibility: hidden;
+        position: absolute;
+        top: 100%;
+        /* width: 100%; */
+        bottom: 0px;
+        left: 0px;
+    }
+
+        .navigation ul ul a {
+            color: white;
+            line-height: 150%;
+            padding: 16px 20px;
+        }
+
+            .navigation ul ul a:hover {
+                background: #27d819;
+            }
+
+        .navigation ul ul ul {
+            border-top: 0px;
+            left: auto;
+            right: -105.5%;
+            top: 0px;
+        }
+
+.menu a {
+    background: #333;
+    color: #e5e5e5;
+    display: block;
+    text-decoration: none;
+    padding: 0px 25px;
+}
+
+.menu > a {
+    line-height: 50px;
+}
